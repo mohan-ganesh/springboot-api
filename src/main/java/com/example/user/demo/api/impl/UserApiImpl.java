@@ -4,6 +4,10 @@ import com.example.user.demo.api.UserAPI;
 import com.example.user.demo.pojo.User;
 import org.springframework.stereotype.Component;
 
+/**
+ *
+ */
+
 @Component
 public class UserApiImpl implements UserAPI {
 

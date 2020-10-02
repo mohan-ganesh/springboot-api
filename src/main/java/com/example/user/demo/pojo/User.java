@@ -1,5 +1,9 @@
 package com.example.user.demo.pojo;
 
+/**
+ *
+ */
+
 public class User {
 
     String name;
