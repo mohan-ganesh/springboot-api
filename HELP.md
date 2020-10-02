@@ -21,3 +21,15 @@ The following guides illustrate how to use some features concretely:
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
 * [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
 
+
+```
+git clone https://github.com/mohan-ganesh/springboot-api.git
+```
+
+```
+mvn clean package spring-boot:run
+```
+
+```
+http://localhost:8080
+```
