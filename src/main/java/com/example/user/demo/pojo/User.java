@@ -9,6 +9,16 @@ public class User {
     String name;
     String email;
 
+    public String getPrintme() {
+        return printme;
+    }
+
+    public void setPrintme(String printme) {
+        this.printme = printme;
+    }
+
+    String printme;
+
     public String getEmail() {
         return email;
     }

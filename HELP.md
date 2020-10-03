@@ -33,3 +33,9 @@ mvn clean package spring-boot:run
 ```
 http://localhost:8080
 ```
+
+
+```
+java -jar -Dspring.profiles.active=test target/demo-0.0.1-SNAPSHOT.jar
+
+```
