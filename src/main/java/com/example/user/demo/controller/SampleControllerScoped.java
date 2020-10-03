@@ -34,7 +34,11 @@ public class SampleControllerScoped {
         logger.info("SampleController - "+this);
 
         User user = userApi.getUserDetails(userId);
-        user.setPrintme(this.toString());
+
+        user.setControllerRef(this.toString());
+        user.setApiRef(userApi.toString());
+        user.setPrintme("New  Instance for every request of the controller");
+
         logger.info("userapi reference -  "+userApi );
         logger.info("user reference -  "+user );
 

@@ -19,6 +19,26 @@ public class User {
 
     String printme;
 
+    public String getControllerRef() {
+        return controllerRef;
+    }
+
+    public void setControllerRef(String controllerRef) {
+        this.controllerRef = controllerRef;
+    }
+
+    String controllerRef;
+
+    public String getApiRef() {
+        return apiRef;
+    }
+
+    public void setApiRef(String apiRef) {
+        this.apiRef = apiRef;
+    }
+
+    String apiRef;
+
     public String getEmail() {
         return email;
     }

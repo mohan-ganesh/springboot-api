@@ -29,7 +29,9 @@ public class SampleController {
     public ResponseEntity<User> greeting(@RequestParam(required = false) String userId) {
         logger.info("SampleController - "+this);
         User user = userApi.getUserDetails(userId);
-        user.setPrintme(this.toString());
+        user.setControllerRef(this.toString());
+        user.setApiRef(userApi.toString());
+        user.setPrintme("Same Instance of the controller");
         logger.info("userapi reference -  "+userApi );
         logger.info("user reference -  "+user );
         logger.info("end");
