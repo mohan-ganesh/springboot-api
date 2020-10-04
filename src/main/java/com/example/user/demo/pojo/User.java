@@ -9,6 +9,12 @@ public class User {
     String name;
     String email;
 
+    public Address getAddress() {
+        return address;
+    }
+
+    Address address;
+
     public String getThreadName() {
         return threadName;
     }
@@ -83,4 +89,7 @@ public class User {
     }
 
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
