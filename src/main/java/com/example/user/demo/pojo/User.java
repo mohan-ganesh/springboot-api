@@ -9,6 +9,27 @@ public class User {
     String name;
     String email;
 
+    public String getThreadName() {
+        return threadName;
+    }
+
+    public void setThreadName(String threadName) {
+        this.threadName = threadName;
+    }
+
+    String threadName;
+
+    public long getThreadId() {
+        return threadId;
+    }
+
+    public void setThreadId(long threadId) {
+        this.threadId = threadId;
+    }
+
+    long threadId;
+
+
     public String getPrintme() {
         return printme;
     }

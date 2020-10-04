@@ -26,12 +26,17 @@ public class SampleController {
     UserAPI userApi;
 
     @GetMapping(value = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<User> greeting(@RequestParam(required = false) String userId) {
+    public ResponseEntity<User> greeting(@RequestParam(required = true,defaultValue = "id") String userId) {
         logger.info("SampleController - "+this);
+        logger.info(Thread.currentThread().getName()+":"+Thread.currentThread().getId());
+
         User user = userApi.getUserDetails(userId);
         user.setControllerRef(this.toString());
         user.setApiRef(userApi.toString());
         user.setPrintme("Same Instance of the controller");
+        user.setThreadName(Thread.currentThread().getName());
+        user.setThreadId(Thread.currentThread().getId());
+
         logger.info("userapi reference -  "+userApi );
         logger.info("user reference -  "+user );
         logger.info("end");
